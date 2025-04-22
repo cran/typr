@@ -1,0 +1,31 @@
+Package: typr
+Title: Write and Render 'Typst' Documents
+Version: 0.0.1
+Authors@R: 
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "christopherkenny@fas.harvard.edu",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Compile 'Typst' files using the 'typst-cli' (<https://typst.app>)
+    command line tool. Automatically falls back to rendering via embedded 'Typst'
+    from 'Quarto' (<https://quarto.org>) if 'Typst' is not installed. Includes
+    utilities to check for 'typst-cli' availability and run 'Typst' commands.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports: cli, fs, processx, rlang
+Depends: R (>= 4.1.0)
+Suggests: jsonlite, rstudioapi, testthat (>= 3.0.0)
+SystemRequirements: Typst command line tool
+        (<https://github.com/typst/typst>) or Quarto command line tool
+        (<https://github.com/quarto-dev/quarto-cli>).
+Config/testthat/edition: 3
+URL: http://christophertkenny.com/typr/
+NeedsCompilation: no
+Packaged: 2025-04-19 02:45:00 UTC; chris
+Author: Christopher T. Kenny [aut, cre]
+    (<https://orcid.org/0000-0002-9386-6860>)
+Maintainer: Christopher T. Kenny <christopherkenny@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2025-04-22 14:20:02 UTC
